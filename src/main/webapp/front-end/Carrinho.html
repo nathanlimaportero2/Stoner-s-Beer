@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.jpeg" />
+
+    <title>Stoner's beer</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <!-- modelos de cervejas na lista e no carrinho -->
+    <div class="models">
+
+        <!-- cerveja na lista -->
+        <div class="cerveja-item">
+            <a href="">
+                <div class="cerveja-item--img"><img src="" /></div>
+                <div class="cerveja-item--add">+</div>
+            </a>
+            <div class="cerveja-item--price">R$ --</div>
+            <div class="cerveja-item--name">--</div>
+            <div class="cerveja-item--desc">--</div>
+        </div>
+
+        <!-- cervejas no carrinho -->
+        <div class="cart--item">
+            <img src="" />
+            <div class="cart--item-nome">--</div>
+            <div class="cart--item--qtarea">
+                <button class="cart--item-qtmenos">-</button>
+                <div class="cart--item--qt">1</div>
+                <button class="cart--item-qtmais">+</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- /models -->
+
+    <!-- .menu-openner aparecera no modo mobile -->
+    <header>
+        <h1><img src="images/STONERFONTE2.png" alt=""></h1>
+        <div class="menu-openner"><span>0</span>🛒</div>
+    </header>
+    <!-- /menu-openner -->
+
+    <!-- conteudo principal -->
+    <main>
+        
+        <h2>Cervejas</h2>
+
+        <div class="cerveja-area"></div>
+    </main>
+    <!-- /conteudo principal -->
+
+    <!-- aside do carrinho -->
+    <aside>
+        <div class="cart--area">
+            <div class="menu-closer">❌</div>
+            <h1>Suas cervejas</h1>
+            <div class="cart"></div>
+            <div class="cart--details">
+                <div class="cart--totalitem subtotal">
+                    <span>Subtotal</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem desconto">
+                    <span>Desconto</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem total big">
+                    <span>Total</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--finalizar">Finalizar a compra</div>
+            </div>
+        </div>
+    </aside>
+    <!-- /aside do carrinho -->
+
+    <!-- janela modal .cervejaWindowArea -->
+    <div class="cervejaWindowArea">
+        <div class="cervejaWindowBody">
+            <div class="cervejaInfo--cancelMobileButton">Voltar</div>
+            <div class="cervejaBig">
+                <img src="" />
+            </div>
+            <div class="cervejaInfo">
+                <h1>--</h1>
+                <div class="cervejaInfo--desc">--</div>
+                <div class="cervejaInfo--sizearea">
+                    <div class="cervejaInfo--sector">Tamanho</div>
+                    <div class="cervejaInfo--sizes">
+                        <div data-key="P" class="cervejaInfo--size">PEQUENA <span>--</span></div>
+                        <div data-key="M" class="cervejaInfo--size">MÉDIA <span>--</span></div>
+                        <div data-key="G" class="cervejaInfo--size selected">GRANDE <span>--</span></div>
+                    </div>
+                </div>
+                <div class="cervejaInfo--pricearea">
+                    <div class="cervejaInfo--sector">Preço</div>
+                    <div class="cervejaInfo--price">
+                        <div class="cervejaInfo--actualPrice">R$ --</div>
+                        <div class="cervejaInfo--qtarea">
+                            <button class="cervejaInfo--qtmenos">-</button>
+                            <div class="cervejaInfo--qt">1</div>
+                            <button class="cervejaInfo--qtmais">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cervejaInfo--addButton">Adicionar ao carrinho</div>
+                <div class="cervejaInfo--cancelButton">Cancelar</div>
+            </div>
+        </div>
+    </div>
+    <!-- /janela modal .cervejaWindowArea -->
+
+    <script src="cervejas.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
